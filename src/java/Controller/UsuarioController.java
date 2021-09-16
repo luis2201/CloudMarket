@@ -1,4 +1,4 @@
-package Controllers;
+package Controller;
 
 import Config.Conexion;
 import java.util.List;
@@ -25,5 +25,6 @@ public class UsuarioController {
   
   return view;
  }
+ 
  
 }

@@ -18,6 +18,7 @@
             <props>
                 <prop key="index.htm">indexController</prop>
                 <prop key="usuarios.htm">usuarioController</prop>
+                <prop key="usuariosAdd.htm">usuarioController</prop>
             </props>
         </property>
     </bean>
@@ -27,7 +28,7 @@
           p:prefix="/WEB-INF/jsp/"
           p:suffix=".jsp" />
     
-    <bean name="usuarioController" class="Controllers.UsuarioController" />
+    <bean name="usuarioController" class="Controller.UsuarioController" />
     <bean name="indexController"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" />

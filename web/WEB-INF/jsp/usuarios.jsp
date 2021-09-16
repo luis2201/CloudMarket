@@ -10,7 +10,7 @@
 <html>
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Welcome to Spring Web MVC project</title>
+  <title>Cloud Market | Software de Punto de Venta</title>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <!-- DataTable -->
@@ -68,7 +68,6 @@
   
   <div class="container">
    <div class="card col-lg-auto border-primary mt-4">
-    
     <div class="card-header bg-primary text-white">     
      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
       <div class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
@@ -84,7 +83,6 @@
       </ul>
      </div>
     </div>
-      
     </div>
     <div class="card-body">
      <table id="tbLista" class="table table-hover table-striped display">
@@ -125,7 +123,6 @@
       </c:forEach>
       </tbody>
      </table>
-
     </div>
    </div>
   </div>
