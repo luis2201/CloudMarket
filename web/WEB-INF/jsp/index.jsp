@@ -1,3 +1,8 @@
+<%-- 
+    Document   : index
+    Created on : 15 sep. 2021, 19:19:57
+    Author     : Luis
+--%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd">
@@ -16,7 +21,7 @@
 
     <body>
     <header>
-        <div class="px-3 py-2 bg-dark text-white">
+        <div class="px-3 py-2 bg-dark text-white" style="font-size: 12px;">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="index.htm" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
@@ -31,7 +36,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link text-white">
+                            <a href="usuarios.htm" class="nav-link text-white">
                                 <i class="fas fa-users-cog fa-2x d-block"></i>
                                 Usuarios
                             </a>
@@ -59,8 +64,8 @@
             </div>
         </div>
     </header>
-    <div class="">
-
+    <div class="container">
+        
     </div>
 
     <!-- JQuery -->

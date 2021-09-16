@@ -17,6 +17,7 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
+                <prop key="usuarios.htm">usuarioController</prop>
             </props>
         </property>
     </bean>
@@ -25,10 +26,8 @@
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/jsp/"
           p:suffix=".jsp" />
-
-    <!--
-    The index controller.
-    -->
+    
+    <bean name="usuarioController" class="Controllers.UsuarioController" />
     <bean name="indexController"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" />
