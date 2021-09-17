@@ -11,8 +11,8 @@ public class Conexion {
   DriverManagerDataSource cn = new DriverManagerDataSource();
   cn.setDriverClassName("com.mysql.jdbc.Driver");
   cn.setUrl("jdbc:mysql://localhost:3306/cloudmarket");
-  cn.setUsername("cloudmarket");
-  cn.setPassword("cloudmarket");
+  cn.setUsername("root");
+  cn.setPassword("");
   
   return cn;
  }
