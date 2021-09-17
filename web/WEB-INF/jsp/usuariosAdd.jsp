@@ -70,12 +70,48 @@
 
     <div class="card-header bg-primary text-white">     
      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-       <h4>Registro de Usuario</h4>
+      <h4>Registro de Usuario</h4>
      </div>
     </div>
    </div>
    <div class="card-body">
-
+    <div class="card border-info col-6" style="margin: auto;">
+     <div class="card-header bg-info nav justify-content-end">
+      <a class="btn btn-close btn-close-white nav-item" href="usuarios.htm" style="width: 0.1em;"></a>
+     </div>
+     <div class="card-body">
+      <form id="frmDatos" method="POST">
+       <div class="row mb-3">
+        <div class="col-12">
+         <label for="nombres" class="form-label">Apellidos y Nombres</label>
+         <input type="text" id="nombres" name="nombres" class="form-control">
+        </div>
+       </div>
+       <div class="row mb-3">
+        <div class="col-6">
+         <label for="usuario" class="form-label">Usuario</label>
+         <input type="text" id="usuario" name="usuario" class="form-control">
+        </div>
+        <div class="col-6">
+         <label for="rol" class="form-label">Contraseña</label>
+         <select id="rol" name="rol" class="form-select">
+          <option value="">-- Seleccione Rol --</option>
+          <option value="1">ADMINISTRADOR</option>
+          <option value="2">BODEGA</option>
+          <option value="3">CAJA</option>
+         </select>
+        </div>
+       </div>
+       <div class="row mb-3">
+        <div class="col-6 d-grid">
+         <button type="submit" class="btn btn-sm btn-primary">Guardar</button>
+        </div>
+        <div class="col-6 d-grid">
+         <button type="button" id="btnCancelar" class="btn btn-sm btn-secondary">Cancelar</button>
+        </div>
+      </form>
+     </div>
+    </div>
    </div>
   </div>
  </div>
@@ -85,6 +121,6 @@
  <!-- Bootstarp -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
  <!-- Site JS -->
- <script src="js/main.js"></script>
+ <script src="js/usuarios.js"></script>
 </body>
 </html>

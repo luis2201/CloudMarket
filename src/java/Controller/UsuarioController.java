@@ -30,11 +30,19 @@ public class UsuarioController {
  }
 
  @RequestMapping(value = "usuariosAdd.htm", method = RequestMethod.GET)
- public ModelAndView Agregar(){
+ public ModelAndView Agregar() {
   view.addObject(new Usuarios());
   view.setViewName("usuariosAdd");
-  
+
   return view;
- } 
- 
+ }
+
+ @RequestMapping(value = "usuariosAdd.htm", method = RequestMethod.POST)
+ public ModelAndView Agregar(Usuarios u) {
+  String sql = "INSERT INTO usuarios(nombres, usuario, contrasena, idrol) VALUES(?,?,?,?)";
+  //this.jdbcTemplate.update(sql, u.getNombres(), u.getUsuario(), u.getUsuario(), u.getIdrol());
+
+  return new ModelAndView("redirect:/usuarios.htm");
+ }
+
 }
