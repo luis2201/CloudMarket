@@ -1,8 +1,5 @@
 package Entity;
 
-/**
- * @author Luis
- */
 public class Usuarios {
  int idusuario;
  String nombres;

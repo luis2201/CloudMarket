@@ -17,8 +17,11 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
+                <prop key="home.htm">homeController</prop>
                 <prop key="usuarios.htm">usuarioController</prop>
                 <prop key="usuariosAdd.htm">usuarioController</prop>
+                <prop key="usuariosEdit.htm">usuarioController</prop>
+                <prop key="usuariosDelete.htm">usuarioController</prop>
             </props>
         </property>
     </bean>
@@ -28,7 +31,8 @@
           p:prefix="/WEB-INF/jsp/"
           p:suffix=".jsp" />
     
-    <bean name="usuarioController" class="Controller.UsuarioController" />
+    <bean name="homeController" class="Controller.HomeController" />
+    <bean name="usuarioController" class="Controller.UsuarioController" />    
     <bean name="indexController"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" />
